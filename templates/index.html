@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <!-- Correct way to link to static CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+  </head>
+  <body>
+    <h1 class="title">Weather App</h1>
+
+    <div class="search-container">
+      <input type="text" id="city-input" placeholder="Enter city name" class="search-input"/>
+      <button id="search-button" class="search-button">Search</button>
+    </div>
+
+    <div id="result" style="margin-top: 30px;"></div>
+
+    <!-- Correct way to link to static JS file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
