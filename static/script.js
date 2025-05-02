@@ -1,4 +1,4 @@
-const apiKey = "ea0719ccd5540113d9f0a1bc795310f9"; // Replace with your real key
+const apiKey = "api-key goes here";
 const resultDiv = document.getElementById("result");
 const searchInput = document.getElementById("city-input");
 const searchButton = document.getElementById("search-button");
