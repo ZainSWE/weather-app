@@ -10,9 +10,5 @@ def home():
 
 if __name__ == '__main__':
     # Ensure the app runs on the correct port set by Render
-    port = int(os.environ.get('PORT', 5000))
-    app.run(debug=True, host='0.0.0.0', port=port)
-
-@app.route('/healthcheck')
-def healthcheck():
-    return "OK"
+    port = int(os.environ.get('PORT', 5000))  # Use the environment port
+    app.run(debug=False, host='0.0.0.0', port=port)  # Turn off debug for production
